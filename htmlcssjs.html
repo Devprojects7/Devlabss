@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS JS</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/addon/edit/closetag.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emmet/2.5.0/emmet.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container"></div>
+    <div class="left">
+        <label for="html" class="label-container">HTML</label>
+        <textarea name="html" id="html-code" onkeyup="run()"></textarea>
+        <label for="css" class="label-container">CSS</label>
+        <textarea name="css" id="css-code" onkeyup="run()"></textarea>
+        <label for="javascript" class="label-container">JAVASCRIPT</label>
+        <textarea name="javascript" id="javascript-code" onkeyup="run()"></textarea>
+    </div>
+    <div class="right">
+        <label class="output">OUTPUT</label>
+        <iframe id="output" onkeyup="run()"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
