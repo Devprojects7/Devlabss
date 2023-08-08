@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+#vid-par{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+#my-vid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+nav{
+    width: 100%;
+    height: 12%;
+    line-height: 75px;
+    position: fixed;
+    background-color: black;
+}
+nav .logo p{
+    font-family:'Borel',cursive;
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+    color:white;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    position: fixed;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+nav ul{
+    float: right;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+nav li a{
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 20px ;
+    color: yellow;
+    text-decoration: none;
+    margin-right: 20px;
+}
+nav li a:hover{
+    color: rgb(137, 0, 172) ;
+    transition: all 1s ease 0s;
+    box-shadow: 25px 8px;
+}
+#right h1{
+    width: 32%;
+    font-family:'Borel',cursive;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #fff;
+    margin-top: 250PX;
+    margin-left: 1010PX;
+    animation: lst 6s infinite;
+
+}
+.start{
+    margin-top: 35PX;
+    margin-left: 1100PX;
+}
+button{
+    font-family:'Borel',cursive;
+    font-size: 30px;
+    font-weight: bolder;
+    background: transparent;
+    color: #fff;
+    border: none;
+    animation: button 7s infinite;
+    transition: 1s;
+}
+button:hover{
+    color: rgb(255, 0, 0);
+    box-shadow: 25px 8px;
+    cursor: pointer;
+}
+@keyframes lst {
+    0%{
+        color: rgb(37, 113, 31);
+    }
+    20%{
+        color: rgb(162, 0, 255);
+    }
+    40%{
+        color: red;
+    }
+    60%{
+        color: rgb(0, 0, 255);
+    }
+    80%{
+        color: rgba(104, 233, 12, 0.375);
+    }
+    100%{
+        color: rgb(191, 0, 0);
+    }
+}
+@keyframes button {
+    0%{
+        color: rgb(0, 255, 115);
+    }
+    20%{
+        color: rgba(0, 42, 255, 0.766);
+    }
+    40%{
+        color: red;
+    }
+    60%{
+        color: rgb(0, 0, 255);
+    }
+    80%{
+        color: rgba(106, 255, 0, 0.907);
+    }
+    100%{
+        color: rgb(191, 0, 0);
+    }
+}
+@keyframes cards {
+    0%{
+        color: #833ab4;
+    }
+    20%{
+        color: #fd1d1d;
+    }
+    40%{
+        color: #fcb045;
+    }
+    60%{
+        color: #a80096;
+    }
+    80%{
+        color: violet;
+    }
+    100%{
+        color: #5f0055;
+    }
+}
+#about{
+    width: 100%;
+    height: 30%;
+    margin-top: 60px;
+}
+.left{
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-top: 300px;
+    margin-left: 200px;
+}
+.right{ font-size: 80px;
+    width: 100%;
+    height: 100%;
+    
+    margin-top: 100px;
+    margin-right: 900px;
+}   
+
+body{
+    background: rgb(114,0,133);
+    background: linear-gradient(90deg, rgba(114,0,133,1) 0%, rgba(0,0,0,1) 61%);
+}
+@keyframes color2{
+    0%{
+        color:rgb(184, 184, 48);
+    }
+    25%{
+        color:rgb(132, 239, 33);
+    }
+    50%{
+        color:rgb(38, 232, 135);
+    }
+    75%{
+        color:rgb(231, 178, 53);
+    }
+    100%{
+        color:rgb(255, 255, 239);
+    }
+}
+h1{
+    color:white;
+    display:flex;
+    width:300px;
+    animation:color2 5s infinite;
+   
+
+}
+.right h1{
+    
+    font-size:60px;
+    width:600px;
+    margin-left:300px;
+}
+.upload{
+    display:flex;
+}
+.left h1{
+    width: 400px;
+
+}
+#file,#submit{
+    font-size: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#submit{
+    margin-top:20px;
+    background-color: rgb(210, 220, 15);
+    padding:10px;
+}
