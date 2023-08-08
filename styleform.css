@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(162,5,213);
+    background: linear-gradient(90deg, rgba(162,5,213,1) 0%, rgba(0,0,0,1) 62%); 
+}
+ 
+
+
+.form-control{
+    padding:10px;
+    
+   }
+input{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 10px 10px 10px;
+}
+
+@keyframes color1{
+       0% {
+        color:rgb(255, 197, 121);
+        }
+         25%{
+         color:rgb(199, 249, 73);
+        
+         }
+        50%{
+       color:rgb(252, 166, 52);
+    }
+        75%{
+            
+           color:rgb(233, 233, 49);
+        }
+            100%{
+                
+               color:rgb(237, 255, 255);
+            }
+    
+}
+
+label{
+    animation:color1 4s infinite;
+    font-weight: bolder;
+    font-size:20px;
+}
+button{
+    box-shadow: 5px 5px 5px black;
+    
+    
+}
+select{
+    box-shadow: 5px 5px 5px rgb(200, 101, 217);
+}
+.formbody{
+    width:500px;
+    height:500px;
+    margin-left:350px;
+    box-shadow: 10px 10px 10px;
+    margin-top:50px
+}
